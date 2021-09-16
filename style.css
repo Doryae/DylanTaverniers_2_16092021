@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("font/Raleway-VariableFont_wght.ttf");
+}
+
+/* no margin-padding beetween element and size */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-size for the entire html, to use the rem value thereafter */
+html {
+    font-size: 20px;
+}
+/* set of rules for the div that encompass all the differents sections / div / etc... */
+#container {
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    font-family: "Raleway", sans-serif;
+}
+/* margin-left for all the element for the initial screen resolution (1440px) */
+header, .first_section, footer {
+    margin-left: 2.5rem;
+}
+/* reset style for button, form and input, and no text-decoration for all the links in the html */
+a {
+    text-decoration: none;
+}
+
+button, form, input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+/* header : logo + nav */
+header {
+    display: flex;
+    padding: 2.5rem 0 2rem 0;
+}
+
+.logo {
+    width: 70%;
+}
+
+nav {
+    width: 30%;
+    float: left;
+    margin-right: 2.5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li a {
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.sign_in{
+    font-weight: bold;
+}
+
+li a:hover, .sign_in{
+    color: #0065FC;
+}
+/* end of header properties */
+/* body */
+h1 {
+    font-size: 1.15rem;
+    padding-bottom: 0.8rem;
+}
+
+p {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+/* first section */
+.position {
+    display: flex;
+}
+
+.icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.position .icon {
+    background-color: #F2F2F2; 
+    border-radius: 17px 0 0 17px;
+}
+
+input, button {
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 250px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+button {
+    position: absolute;
+    width: 140px;
+    background-color: #0065FC;
+    color: #fff;
+    border-radius: 0 17px 17px 0;
+    text-align: center;
+    transition: .3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #0056d7;
+}
+
+button:active {
+    font-size: 22px;
+}
