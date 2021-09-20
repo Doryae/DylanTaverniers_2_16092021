@@ -74,16 +74,28 @@ li a:hover, .sign_in{
 }
 /* end of header properties */
 /* body */
+/* title + paragraph */
 h1 {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     padding-bottom: 0.8rem;
 }
 
-p {
-    font-size: 0.8rem;
+h3 {
+    font-size: 0.9rem;
+}
+
+/* first section */
+
+.first_section {
+    padding-left: 3px;
+}
+
+.first_section p {
+    font-size: 0.815rem;
     padding-bottom: 1rem;
 }
-/* first section */
+
+/* search button */
 .position {
     display: flex;
 }
@@ -114,7 +126,7 @@ input, button {
 
 input {
     box-sizing: border-box;
-    width: 250px;
+    width: 240px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     padding-left: 15px;
@@ -139,3 +151,80 @@ button:hover {
 button:active {
     font-size: 22px;
 }
+
+/* end of button */
+/* filtre section */
+
+.filtre_container {
+    height: 50px;
+    margin: 1.5rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtre_container h3, .filtre h3 {
+    padding: 0 28px 0 12px;
+}
+
+.filtre {
+    max-height: 50px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-left: none;
+    border-radius: 100px;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+.filtre .icon {
+    left: -1px;
+    background: #DEEBFF;
+    border-radius: 50%;
+    color: #0065FC;
+    z-index: 2;
+}
+
+/* style one */
+
+.filtre:hover {
+    cursor: pointer;
+    border-color: #0056d7;
+    background-color: #0065FC;
+    color: #fff;
+}
+
+
+/* style two */
+/*
+.filtre:hover {
+    box-shadow: #D9D9D9 5px 5px 3px;
+    cursor: pointer;
+}
+*/
+
+/* end of filtre section */
+
+/* information */
+.info {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 5px;
+}
+
+.info p {
+    padding: 0 0 0 10px;
+}
+
+.info .icon {
+    height: 24px;
+    width: 24px;
+    font-size: 12px;
+    color: #0065FC;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+}
+
+
