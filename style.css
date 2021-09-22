@@ -50,17 +50,21 @@ button, form, input {
 /* header : logo + nav */
 header {
     display: flex;
-    padding: 2.5rem 0 2rem 0;
+    flex: wrap;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 70%;
+    padding: 2.5rem 0 2rem 0;
 }
 
-nav {
-    width: 30%;
-    float: left;
-    margin-right: 2.5rem;
+nav, nav li a {
+    margin-right: 1rem;
+}
+
+nav li a {
+    padding: 52px 15px 0 15px;
+    display: block;
 }
 
 ul {
@@ -75,11 +79,14 @@ li a {
     font-weight: 500;
 }
 
-.sign_in{
-    font-weight: bold;
+li a:hover{
+    color: #0065FC;
+    border-top:#0065FC solid 2px;
+    padding-top: 50px;
 }
 
-li a:hover, .sign_in{
+.sign_in{
+    font-weight: bold;
     color: #0065FC;
 }
 /* end of header properties */
@@ -201,7 +208,12 @@ button:active {
 
 .filtre:hover {
     cursor: pointer;
-    border-color: #0056d7;
+    background-color: #DEEBFF;
+    border-color: #0065FC;
+}
+
+.filtre:hover .icon {
+    transition: .3s;
     background-color: #0065FC;
     color: #fff;
 }
@@ -272,6 +284,11 @@ button:active {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    transition: .3s;
+}
+
+.box:hover {
+    transform: scale(105%);
 }
 
 .img_box {
@@ -315,8 +332,11 @@ button:active {
 .desc_box {
     background: #fff;
     border-radius: 0 0 25px 25px;
-    box-shadow: 0px 3px 5px rgb(217 217 217 / 0.4);
     padding: 0.6rem;
+}
+
+.img_box, .desc_box {
+    box-shadow: 5px 5px 5px rgb(217 217 217 / 0.8);
 }
 
 .desc_box h3, .desc_box p{
