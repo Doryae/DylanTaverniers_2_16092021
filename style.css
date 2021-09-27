@@ -437,6 +437,7 @@ aside {
   flex-direction: row;
   margin: auto;
   padding-bottom: 30px;
+  transition: 0.3s;
 }
 
 .img_flex_mp .img_box {
@@ -627,17 +628,162 @@ footer h1 {
 }
 
 /* Responsible */
-@media all and (max-width: 375px) {
-  #container {
-    margin: auto;
-    min-width: 375px;
-  }
-
+@media all and (max-width: 1350px) {
+  header,
   .first_section,
   .second_section,
   .activity {
-    margin: 0 1rem 0 1rem;
+    margin-left: 30px;
   }
+
+  .activity,
+  aside {
+    margin-right: 30px;
+  }
+
+  .img_container_location {
+    margin-right: 25px;
+  }
+}
+
+@media all and (max-width: 1275px) {
+  .second_section,
+  .activity {
+    margin-left: 10px;
+  }
+
+  .activity,
+  aside,
+  .img_container_location {
+    margin-right: 10px;
+  }
+
+  .activity_flex_container {
+    max-width: 800px;
+    min-width: 375px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .activity .box {
+    width: 600px;
+  }
+
+  .activity_flex_container .box,
+  .activity_column {
+    padding-top: 30px;
+  }
+
+  .activity_flex_container .box:first-child {
+    padding: 0;
+  }
+
+  .activity_flex_container .img_box {
+    height: 300px;
+  }
+
+  .first_column_padding {
+    padding: 0;
+  }
+
+  .activity_column .box {
+    width: 600px;
+  }
+
+  .activity_column .img_box {
+    height: 300px;
+  }
+
+  .activity_column .first_column_padding,
+  .activity_column .second_column_padding {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .second_section {
+    flex-direction: column-reverse;
+    margin-left: 0;
+  }
+
+  aside {
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+  }
+
+  .img_flex_mp {
+    flex-direction: row;
+    padding-bottom: 40px;
+  }
+
+  .img_container_location {
+    width: 100%;
+    border-radius: 0;
+    background-color: #fff;
+  }
+
+  .img_flex_location .box {
+    width: 340px;
+    height: 200px;
+  }
+}
+
+@media all and (max-width: 1075px) {
+  .filtre_container {
+    height: auto;
+    margin: 35px 0 30px 0;
+  }
+
+  .filtre {
+    margin: 15px 15px 0 0;
+  }
+
+  .img_flex_mp {
+    flex-direction: column;
+  }
+
+  .img_flex_mp .box {
+    width: 335px;
+    padding-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .img_flex_mp .box:first-child {
+    margin-top: 0;
+  }
+
+  .img_flex_mp .img_box {
+    height: 150px
+  }
+
+  .img_flex_location {
+    margin: 0 10px;
+  }
+
+  .img_flex_location .box {
+    margin-right: 10px;
+  }
+
+  .activity {
+    margin: 0;
+  }
+
+  .activity h1 {
+    margin-left: 20px;
+  }
+
+  .footer_container {
+    padding: 0;
+  }
+
+  .footer {
+    justify-content: space-around;
+    width: auto;
+  }
+}
+
+@media all and (max-width: 650px) {
   /* header section for iphone 8 375px in width */
   header {
     display: block;
@@ -706,14 +852,34 @@ footer h1 {
     padding: 0 1rem 0 0;
   }
   /* end of nav - header section for iphone 8 375px width */
-  /* start of the first section */
   .first_section {
     margin-top: 35px;
   }
 
+  .activity {
+    padding-top: 15px;
+  }
+
+  .activity_flex_container .box,
+  .activity_column .box {
+    width: 335px;
+  }
+
+  .activity_flex_container .img_box,
+  .activity_column .img_box {
+    height: 135px;
+  }
+}
+
+@media all and (max-width: 475px) {
+
+  .first_section {
+     margin-left: 1rem;
+     margin-right: 1rem;
+   }
+  
   input {
-    width: 250px;
-    padding-right: 20px;
+    padding-right: 25px;
   }
 
   .search {
@@ -725,17 +891,36 @@ footer h1 {
     width: 50px;
     position: absolute;
     top: 272px;
-    right: 20px;
+    left: 305px;   
     border-radius: 17px;
-  }
-
-  .filtre_container {
-    height: auto;
-    margin: 35px 0 30px 0;
   }
 
   .filtre_items h3 {
     padding: 0 12px 0 8px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .about, .our_accommodation, .assistance {
+    padding: 50px 0 0 50px;
+}
+
+  .assistance {
+    padding-bottom: 50px;
+  }
+}
+/* Iphone 8 */
+@media all and (max-width: 375px) {
+  #container {
+    margin: auto;
+    min-width: 375px;
+  }
+
+  input {
+    width: 250px;
+    padding-right: 20px;
   }
 
   .filtre_items {
@@ -758,5 +943,4 @@ footer h1 {
   .info p {
     font-size: 0.75rem;
   }
- /* end of first section */
 }
