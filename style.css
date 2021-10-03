@@ -317,7 +317,7 @@ aside {
 }
 
 .box:hover {
-  transform: scale(105%);
+  transform: scale(1.05);
 }
 
 .img_box {
